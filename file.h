@@ -157,6 +157,9 @@ struct global
     int debug_tunnel;		/* Print tunnel debugging info? */
     int debug_state;		/* Print FSM debugging info? */
     int ipsecsaref;
+    int hellodelay;		/* HELLO packet interval */
+    int ctrl_retrans_max;	/* Control packet retrans max count */
+    int ctrl_retrans_delay;		/*Control packet retrans delay */
 };
 
 extern struct global gconfig;   /* Global configuration options */
